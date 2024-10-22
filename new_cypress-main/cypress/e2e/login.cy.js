@@ -36,12 +36,10 @@ describe('Проверка авторизации', function () {
         cy.get(result_page.title).contains('Такого логина или пароля нет');
      });
 
-     it('Приведение к строчным буквам в логине', function () {
-        cy.get(main_page.email).type('GerMan@Dolnikov.ru');
-        cy.get(main_page.password).type(data.password);
-        cy.get(main_page.login_button).click();
-        cy.get(result_page.title).should('be.visible');
-        cy.get(result_page.title).contains('Авторизация прошла успешно');
-     });
+     it('Валидация на наличие @', function () {
+      cy.get(main_page.email).type('USERLOGIN1'); //Логин без @
+      cy.get(main_page.password).type(data.password);
+      cy.get(main_page.login_button).click();
+      cy.get(result_page.title).contains('Нужно исправить проблему валидации');
      
  })
