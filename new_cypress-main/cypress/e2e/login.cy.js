@@ -23,7 +23,7 @@ describe('Проверка авторизации', function () {
 
      it('Восстановление пароля', function () {
         cy.get(main_page.fogot_pass_btn).click();
-        cy.get(recovery_password_page.email).type('karinalogayu@yandex.ru');
+        cy.get(recovery_password_page.email).type('user@yandex.ru');
         cy.get(recovery_password_page.send_button).click();
         cy.get(result_page.title).contains('Успешно отправили пароль на e-mail');
      });
