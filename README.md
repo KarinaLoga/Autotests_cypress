@@ -13,13 +13,13 @@
 ## Детали реализации
 
 1. baseUrl вынесен в переменные в файл конфиг
-![image](https://raw.githubusercontent.com/KarinaLoga/Autotests_cypress/refs/heads/main/Screenshot_9.png)
+![image](https://raw.githubusercontent.com/KarinaLoga/Autotests_cypress/refs/heads/main/Screenshot_1.png)
 
 2. Применение хуков beforeEach и afterEach
-![image](https://raw.githubusercontent.com/KarinaLoga/Autotests_cypress/refs/heads/main/Screenshot_7.png)
+![image](https://github.com/KarinaLoga/Autotests_cypress/blob/main/Screenshot_3.png)
 
 3. Переменные данные для авторизации вынесены в отдельный файл
-![image](https://raw.githubusercontent.com/KarinaLoga/Autotests_cypress/refs/heads/main/Screenshot_10.png)
+![image](https://raw.githubusercontent.com/KarinaLoga/Autotests_cypress/refs/heads/main/Screenshot_2.png)
 
 4. Каждая страница описана в формате объекта с локаторами
-![image](https://raw.githubusercontent.com/KarinaLoga/Autotests_cypress/refs/heads/main/Screenshot_8.png)
+![image](https://raw.githubusercontent.com/KarinaLoga/Autotests_cypress/refs/heads/main/Screenshot_4.png)
