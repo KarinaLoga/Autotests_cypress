@@ -40,6 +40,7 @@ describe('Проверка авторизации', function () {
       cy.get(main_page.email).type('USERLOGIN1'); //Логин без @
       cy.get(main_page.password).type(data.password);
       cy.get(main_page.login_button).click();
-      cy.get(result_page.title).contains('Нужно исправить проблему валидации');
+      cy.get(result_page.title).contains('Нужно исправить проблему валидации')
+   });
      
  })
